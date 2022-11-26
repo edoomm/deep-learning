@@ -1,4 +1,10 @@
-import os
+import torch
+import torchvision
+import numpy as np
+import fastprogress
+import time
+import matplotlib.pyplot as plt
+import seaborn as sns
 
 def get_device(cuda_preference=True):
     """Gets pytorch device object. If cuda_preference=True and 
